@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #0A0717;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 300;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    width: 100%;
+    padding: 25px 100px 25px 100px;
+}
+
+/* Text */
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.page-title {
+    text-align: left;
+    align-items: left;
+}
+
+/* Modules */
+
+.container-flex {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-center {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Link-card */
+
+.link-card {
+    background-color: #FBFBFB;
+    color: black;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.link-card img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Footer */
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    padding: 10px;
+}
+
+/* Typing animation */
+
+.animated-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    width: 0;
+    animation: typing 2s steps(30, end) forwards;
+}
+
+.animated-text.black {
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
